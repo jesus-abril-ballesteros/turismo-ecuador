@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Ecuador</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- MENU DE NAVEGACIÓN -->
+    <nav class="bg-light p-3">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="destino.html">Destinos</a></li>
+            <li class="nav-item"><a class="nav-link" href="gastronomía.html">Gastronomía</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- CARRUSEL -->
+    <div id="carouselTurismo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img2/Galapagos.jpg" class="d-block w-100" alt="Galápagos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Islas Galápagos</h5>
+                    <p>Un paraíso natural único en el mundo.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img2/Mitad_mundo.jpg" class="d-block w-100" alt="Mitad del Mundo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mitad del Mundo</h5>
+                    <p>El punto donde se cruza la línea ecuatorial.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img2/Chimborazo.jpg" class="d-block w-100" alt="Chimborazo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Volcán Chimborazo</h5>
+                    <p>El punto más cercano al sol desde el centro de la Tierra.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTurismo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTurismo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Video -->
+    <hr>
+    <h2 class="mt-4 text-success text-center">Video Promocional</h2>
+    <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/RDbe-4Z5bvQ" title="Video Turismo Ecuador" allowfullscreen></iframe>
+    </div>
+    <hr>
+
+    <!-- Galería -->
+    <h2 class="mt-4 text-success text-center">Galería de Imágenes</h2>
+    <div class="row text-center">
+        <div class="col-md-4 mb-3">
+            <img src="galería/Chimborazo.jpg" class="img-fluid rounded" alt="Chimborazo">
+        </div>
+        <div class="col-md-4 mb-3">
+            <img src="galería/Galapagos.jpg" class="img-fluid rounded" alt="Galápagos">
+        </div>
+        <div class="col-md-4 mb-3">
+            <img src="galería/Mitad_mundo.jpg" class="img-fluid rounded" alt="Mitad del Mundo">
+        </div>
+    </div>
+
+    <!-- Acordeón -->
+    <hr>
+    <h2 class="mt-4 text-success text-center">Regiones del Ecuador</h2>
+    <div class="accordion" id="acordeonEcuador">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#costa">Costa</button>
+            </h2>
+            <div id="costa" class="accordion-collapse collapse show" data-bs-parent="#acordeonEcuador">
+                <div class="accordion-body">Playas hermosas y gastronomía deliciosa.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sierra">Sierra</button>
+            </h2>
+            <div id="sierra" class="accordion-collapse collapse" data-bs-parent="#acordeonEcuador">
+                <div class="accordion-body">Montañas y volcanes impresionantes.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#oriente">Oriente</button>
+            </h2>
+            <div id="oriente" class="accordion-collapse collapse" data-bs-parent="#acordeonEcuador">
+                <div class="accordion-body">Selva amazónica con gran biodiversidad.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <hr>
+    <h2 class="mt-4 text-success text-center">Información Adicional</h2>
+    <ul class="nav nav-tabs justify-content-center" id="infoTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#clima">Clima</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#cultura">Cultura</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#gastronomia">Gastronomía</button>
+        </li>
+    </ul>
+
+    <div class="tab-content mt-3 text-center">
+        <div class="tab-pane fade show active" id="clima">Ecuador tiene un clima variado según la región.</div>
+        <div class="tab-pane fade" id="cultura">Rica cultura indígena y mestiza en todo el país.</div>
+        <div class="tab-pane fade" id="gastronomia">Platos típicos como el ceviche, locro, y hornado.</div>
+    </div>
+
+    <!-- Mapa -->
+    <hr>
+    <h2 class="mt-4 text-success text-center">Volcán Chimborazo</h2>
+    <div class="ratio ratio-16x9">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.026132601797!2d-78.82723936744175!3d-1.4692803254761322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d372d7706a480b%3A0x69d5c66d2e629dff!2sChimborazo!5e0!3m2!1ses-419!2sec!4v1762889728738!5m2!1ses-419!2sec"
+            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <hr>
+
+    <h2 class="mt-4 text-success text-center">Isla Santiago</h2>
+    <div class="ratio ratio-16x9">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429440.62963559147!2d-90.77467788462103!3d-0.19284715884248463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9aab23acc78137a5%3A0x2a4992f090979738!2sIsla%20Santiago!5e0!3m2!1ses-419!2sec!4v1762892870553!5m2!1ses-419!2sec"
+            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <hr>
+    <h2 class="mt-4 text-success text-center">Mitad del mundo</h2>
+    <div class="ratio ratio-16x9">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.818317778793!2d-78.45841132596111!3d-0.0020542355688363064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5881ef89bad91%3A0xb2e1699b00a1a9b8!2sMitad%20del%20Mundo!5e0!3m2!1ses-419!2sec!4v1762893057809!5m2!1ses-419!2sec"
+            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <hr>
+
+    <!-- Footer -->
+    <hr>
+    <footer class="text-center bg-light p-3 mt-4">
+        <p>Síguenos en redes sociales:</p>
+        <a href="#" class="me-2">Facebook</a> |
+        <a href="#" class="me-2">Instagram</a> |
+        <a href="#">Twitter</a>
+        <p class="mt-2 mb-0">&copy; 2025 Turismo Ecuador</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
